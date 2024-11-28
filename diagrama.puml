@@ -1,0 +1,58 @@
+@startuml
+
+package "Model" {
+    class Product {
+        - double price
+        + accept(Visitor): void
+    }
+
+    class Book {
+        - String title
+        - String author
+        - String ISBN
+        + accept(Visitor): void
+    }
+
+    class Electronic {
+        - String brand
+        - String model
+        + accept(Visitor): void
+    }
+    
+    Product <|-- Book
+    Product <|-- Electronic
+}
+
+package "Visitor" {
+    interface Visitor {
+        + visit(Book): void
+        + visit(Electronic): void
+    }
+
+    class HolidayDiscountVisitor {
+        + visit(Book): void
+        + visit(Electronic): void
+    }
+
+    Visitor <|.. HolidayDiscountVisitor
+}
+
+package "Service" {
+    class DiscountService {
+        + applyDiscount(Product, Visitor): void
+    }
+    
+    DiscountService --> Visitor
+    DiscountService --> Product
+}
+
+package "Controller" {
+    class DiscountController {
+        + applyHolidayDiscountToBook(Book): Book
+        + applyHolidayDiscountToElectronic(Electronic): Electronic
+    }
+    
+    DiscountController --> DiscountService
+}
+
+@enduml
