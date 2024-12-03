@@ -1,0 +1,147 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica";
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    padding: 10px;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+
+.logo {
+    padding: 10px;
+    display: flex;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    padding: 2rem;
+    margin: 2rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.button {
+    padding: 1rem;
+    color: black;
+    font-size: large;
+    font-family: "Parkinsans", sans-serif;
+    border-radius: 5px;
+    margin: 1rem;
+    cursor: pointer;    
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0; 
+    font-family: "Parkinsans", sans-serif; 
+    font-size: 16px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .footer p {
+    margin: 0; 
+  }
+   */
+
+   /* Garante que a página ocupe toda a altura da janela */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Define um container principal que engloba todo o layout */
+  .container {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    min-height: 100vh; /* Garante que o container tenha no mínimo a altura da janela */
+  }
+  
+  /* Estiliza o header */
+  .header {
+    background-color: #34495e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .logo {
+    padding: 0.5rem;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+  
+  /* Estiliza a seção de produtos */
+  .produtos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex: 1; /* Faz esta seção ocupar o espaço disponível */
+  }
+  
+  /* Estiliza os botões de produto */
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: "Parkinsans", sans-serif;
+  }
+  
+  .button img {
+    max-height: 236px;
+    margin-bottom: 10px;
+  }
+  
+  .button:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Estiliza o footer */
+  .footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-family: "Parkinsans", sans-serif;
+  }
+  

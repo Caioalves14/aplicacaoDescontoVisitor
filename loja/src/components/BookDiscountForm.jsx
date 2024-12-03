@@ -18,8 +18,8 @@ function BookDiscountForm() {
   };
 
   return (
-    <div>
-      <h2>Apply Holiday Discount to Book</h2>
+    <div className='div'>
+      <h2>Aplicar desconto simples em livro:</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Title:</label>
@@ -33,12 +33,12 @@ function BookDiscountForm() {
           <label>Price:</label>
           <input type="number" name="price" value={book.price} onChange={handleChange} required />
         </div>
-        <button type="submit">Apply Discount</button>
+        <button type="submit">Aplicar Desconto</button>
       </form>
 
       {discountedBook && (
         <div>
-          <h3>Discounted Book:</h3>
+          <h3>Livro com desconto simples:</h3>
           <p>Title: {discountedBook.title}</p>
           <p>Author: {discountedBook.author}</p>
           <p>Original Price: {book.price}</p>

@@ -18,8 +18,8 @@ function ElectronicDiscountForm() {
   };
 
   return (
-    <div>
-      <h2>Apply Holiday Discount to Electronic</h2>
+    <div className='div'>
+      <h2>Aplicar Desconto Especial em eletrónicos</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Brand:</label>
@@ -33,7 +33,7 @@ function ElectronicDiscountForm() {
           <label>Price:</label>
           <input type="number" name="price" value={electronic.price} onChange={handleChange} required />
         </div>
-        <button type="submit">Apply Discount</button>
+        <button type="submit">Aplicar Desconto</button>
       </form>
 
       {discountedElectronic && (

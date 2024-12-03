@@ -10,8 +10,8 @@ function AppRouter() {
             <Router>
                 <Routes>
                     <Route path="/" element = {<Home />}></Route>
-                    <Route path="/eletronico" element = {<EletronicDiscountForm />}></Route>
-                    <Route path="/livro" element = {<BookDiscountForm />}></Route>
+                    <Route path="/eletronicos" element = {<EletronicDiscountForm />}></Route>
+                    <Route path="/livros" element = {<BookDiscountForm />}></Route>
                 </Routes>
             </Router>
         </>

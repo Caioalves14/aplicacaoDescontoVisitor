@@ -1,45 +1,82 @@
-.book-discount-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 20px auto;
+/* Estilo geral para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Fundo claro */
+    color: #333; /* Cor do texto */
+    line-height: 1.6;
+  }
+  
+  /* Container principal */
+  .div {
+    max-width: 600px;
+    margin: 20px auto; /* Centraliza o conteúdo */
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-.book-discount-form h2 {
-    text-align: center;
-    color: #333;
+    background: #ffffff; /* Fundo branco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    border-radius: 8px; /* Bordas arredondadas */
+  }
+  
+  /* Estilo do título principal */
+  h2 {
     margin-bottom: 20px;
-}
-
-.book-discount-form label {
+    font-size: 24px;
+    color: #2c3e50;
+  }
+  
+  /* Estilo dos campos do formulário */
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
     font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.book-discount-form input {
-    padding: 8px;
-    margin-bottom: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
     width: 100%;
-    box-sizing: border-box;
-}
-
-.book-discount-form button {
-    padding: 10px 15px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 16px;
-    margin-top: 10px;
-}
-
-.book-discount-form button:hover {
-    background-color: #218838;
-}
+  }
+  
+  /* Estilo do botão */
+  button {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Estilo para a seção de resultados */
+  h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #34495e;
+  }
+  
+  p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  p span {
+    font-weight: bold;
+  }
+  
